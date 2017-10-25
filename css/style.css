@@ -954,6 +954,10 @@ form label {
 .gtco-heading-organisation {
 	margin-bottom: 0;
 }
+.gtco-heading-partners {
+	margin-bottom: 0;
+	color: #00FF00;
+}
 .gtco-heading.gtco-heading-sm {
   margin-bottom: 2em;
 }
