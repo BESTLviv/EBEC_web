@@ -951,6 +951,9 @@ form label {
 .gtco-heading {
   margin-bottom: 5em;
 }
+.gtco-heading-organisation {
+	margin-bottom: 0;
+}
 .gtco-heading.gtco-heading-sm {
   margin-bottom: 2em;
 }
