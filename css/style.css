@@ -820,6 +820,9 @@ form label {
   background: linear-gradient(to right, #3dcdbc 0%, #33a1bd 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3dcdbc', endColorstr='#33a1bd', GradientType=1 );
 }
+#gtco-header .background {
+	text-align: center;
+}
 #gtco-header p {
   color: #d3f1ed;
   font-size: 20px;
