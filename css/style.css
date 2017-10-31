@@ -1291,7 +1291,8 @@ form label {
 }
 
 .btn-warning {
-  padding: 35px 30px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
   background: #f0ad4e;
   color: #fff;
   border: 2px solid #f0ad4e;
