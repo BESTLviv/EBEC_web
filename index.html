@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>EBEC Challenge Lviv - BEST Lviv</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="European BEST Engineering Competition (EBEC) in Lviv Polytechnic" />
-	<meta name="keywords" content="ebec, engineering competition, best, best lviv, engineer, EBEC, European, BEST, Engineering Competition, Київ, Львів, Вінниця, Запоріжжя, НТУУ 'КПІ', ЗНТУ, НУ 'ЛП', ВНТУ" />
+	<meta name="description" content="European BEST Engineering Competition (EBEC) in Lviv Polytechnic " />
+	<meta name="keywords" content="ebec, EBEC Challenge, engineering competition, best, best lviv, engineer, EBEC, European, BEST, Engineering Competition, Київ, Львів, Вінниця, Запоріжжя, НТУУ 'КПІ', ЗНТУ, НУ 'ЛП', ВНТУ" />
 	<meta name="author" content="best-lviv.org.ua" />
 
   	<!-- Facebook and Twitter integration -->
@@ -41,7 +41,7 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -65,7 +65,7 @@
 	
 	<div id="page">
 
-		<nav class="gtco-nav" role="navigation">
+       <nav class="gtco-nav" role="navigation" style="z-index: 2000;">
 			<div class="gtco-container">
 				
 				<div class="row">
@@ -75,7 +75,7 @@
 					<div class="col-xs-10 text-right menu-1">
 					
 						<ul>
-							<li class="active"><a href="index.html">Головна</a></li>
+							<li class="active"><a href="#page">Головна</a></li>
 							<li>
 							<a href="#about">Категорії</a>
 								<!--<ul class="dropdown">
@@ -88,6 +88,7 @@
 							</li>
 							<li>
 								<a href="#organisation">Організатори</a>
+                                
 							</li>
 							
 						</ul>
@@ -98,28 +99,29 @@
 			</div>
 		</nav>
 		<header id="gtco-header" class="gtco-cover" role="banner">
-			<style> 
-				body { padding: 0; margin: 0; width: 100%; min-height: 100vh; } 
-				.background { 
-				width: 100%; height: calc(100vh + (-51px)); 
-				background-image: url('images/backgroundVI.png'); 
-				background-size: cover; 
-				background-position: 50% 0;
-				background-repeat: no-repeat; 
-				display: flex; display: -webkit-flex; 
-				align-items: center; 
-				-webkit-align-items: center; 
-				justify-content: center; 
-				-webkit-justify-content: center; 
-				} 
-				.background img { max-width: 700px; width: 90%; max-height: 90%; transition: 0.5s; background-color: RGBA(0, 0, 0, 0.1); border-radius: 20px; padding: 20px; } 
-				.background img:hover { background-color: RGBA(0, 0, 0, 0.3); transition: 0.5s; padding: 25px; }
-			</style>
+			
+            
 			<div class="background"> 
-				<a href="https://goo.gl/forms/EDdb7nDXZVArssRz1"> 
-					<img src="images/registration.png"></img> 
+                <img src="images/backlist.png" style="height: 100%; position: absolute; z-index: 100;">
+
+				<a href="https://goo.gl/forms/EDdb7nDXZVArssRz1" style="z-index: 1900;"> 
+					<img src="images/registration.png"> 
 				</a> 
 			</div>
+            <script>
+            $(document).ready(function() {
+var movementStrength = 15;
+var height = movementStrength / $(window).height();
+var width = movementStrength / $(window).width();
+$("body").mousemove(function(e){
+          var pageX = e.pageX - ($(window).width() / 2);
+          var pageY = e.pageY - ($(window).height() / 2);
+          var newvalueX = width * pageX * -1 - 0;
+          var newvalueY = height * pageY * -1 + 20;
+          $('.background').css("background-position", newvalueX+"px     "+newvalueY+"px");
+});
+});
+            </script>
 			</header>
 	<!--	<header id="gtco-header" class="gtco-cover" role="banner">
 			<div class="gtco-container">
@@ -153,7 +155,7 @@
 				<div class="row row-pb-sm">
 					<div id ="categories" class="col-md-12 gtco-heading service-wrap">
 						<center><h2>European BEST Engineering Competition (EBEC) Challenge</h2></center>
-						<p><b>EBEC</b> – це змагання між студентами технічних університетів Європи, започаткувала їх організація BEST (Board of European Students of Technology)ˆ в 2002 році.  Ціль змагань – відкрити потенціал інженера в кожному, дати можливість студентам проявити свою креативність та нестандартне мислення.</p>
+						<p><b>EBEC</b> – це змагання між студентами технічних університетів Європи, започаткувала їх організація BEST (Board of European Students of Technology) в 2002 році.  Ціль змагань – відкрити потенціал інженера в кожному, дати можливість студентам проявити свою креативність та нестандартне мислення.</p>
     <p><b>Візія</b> – просування інженерної думки в Україні шляхом створення сприятливих умов для її виникнення і розвитку.</p>
      <p><b>BEST Lviv</b> організовує змагання на локальному рівні з 2009 року.</p>
 	 <br>
@@ -324,9 +326,16 @@
 	</div>
 
 	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+		<a href="#page" ><i class="icon-arrow-up"></i></a>
 	</div>
-	
+	 <script>
+         $(function() {
+           $('a[href*=#]').on('click', function(e) {
+           e.preventDefault();
+           $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+              });
+         });
+     </script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
