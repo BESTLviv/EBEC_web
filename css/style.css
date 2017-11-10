@@ -953,6 +953,7 @@ form label {
 	margin-bottom: 0;
 }
 .gtco-heading-partners h2{
+	font-family: 'Vollkorn SC', serif;
 	 font-size: 40px;
 	margin-bottom: 10px;
 	line-height: 1.5;
@@ -1990,4 +1991,36 @@ body { padding: 0; margin: 0; width: 100%; min-height: 100vh; }
 @media screen and (max-width: 768px) {
     .gtco-nav {display: none;}
     .background { background-size: auto 100%; }
+}
+.partners{
+  position:relative;
+}
+
+.partners_1{
+  display: inline-block;
+  width: auto;
+  max-height:250px;
+  max-width:250px;
+  height:auto;
+  margin: 30px 50px 30px 60px;
+}
+
+.partners_2{
+  display: inline-block;
+  width: auto;
+  max-height:200px;
+  max-width:200px;
+  height:auto;
+  margin: 30px 50px 30px 60px;
+}
+#textbox {
+  text-align: center;
+}
+
+#textbox h2 {
+  font-size: 45pt;
+  font-family: 'hooge05_55Cyr2';
+  color: #8eadad;
+  margin: auto;
+  padding: 47px;
 }
