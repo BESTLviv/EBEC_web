@@ -2015,7 +2015,7 @@ body { padding: 0; margin: 0; width: 100%; min-height: 100vh; }
 .partners_2{
   display: inline-block;
   width: auto;
-  max-height:200px;
+  max-height:100px;
   max-width:200px;
   height:auto;
   margin: 30px 50px 30px 60px;
